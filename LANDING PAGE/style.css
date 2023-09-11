@@ -1,0 +1,207 @@
+/* ----------------------
+copyright 2023 smrth.3
+---------------------------*/
+@font-face {
+    font-family: monument;
+    src: url(MonumentExtended-Regular.otf);
+}
+* , 
+*::before , 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------
+ CUSTOM VARIABLE CSS
+---------------------------*/
+:root {
+
+}
+
+/* -------------------
+ RESET
+-------------------- */
+
+html , 
+body {
+    height: 100%;
+    width: 100%;
+    /* background: hsl(346deg 17% 70% ); */
+    background: #000;
+    scroll-behavior: smooth;
+    
+}
+
+main ,
+article {
+    height: 100%;
+    width: 100%;
+}
+
+* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+
+/* ---------------------
+ REUSED STYLES
+---------------------------*/
+
+
+
+
+
+
+
+
+
+/* --------------------------
+#MAIN
+--------------------------------*/
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background:hsla(340, 89%, 89%, 0.301);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.main-page-upper {
+    height: inherit;
+    width: 26%;
+    /* background: green; */
+}
+
+.main-page-middle{
+    height: inherit;
+    width: 60%;
+    /* background: yellowgreen; */
+    background-image: url(./images/img2.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: top;
+    filter: blur(1px);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: hsla(340, 89%, 89%, 0.301);
+}
+
+.main-page-bottom {
+    height: inherit;
+    width: 6%;
+    /* background: red; */
+}
+
+.text-section {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50% , 0);
+}
+
+.text-section h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 999;
+    line-height: 80px;
+    letter-spacing: 5px;
+    font-family: monument;
+    font-size: 5rem;
+}
+
+.small-img-section {
+    height: 30em;
+    width: 20em;
+    background: #000;
+    position: absolute ;
+    right: 5%;
+    top: 18%;
+    background-image: url(./images/img3.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;;
+    transition: all ease 500ms;
+}
+
+.hori-text {
+    text-transform: uppercase;
+    color: transparent;
+    font-size: 5rem ;
+    font-weight: 999;
+    letter-spacing: 5px;
+    font-family: monument;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    margin-top: -134.4rem;
+    margin-left: 9rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.navbar img {
+    position: absolute;
+    top:4%;
+    left: 6%;
+    width: 4%;
+}
+
+.navbar h5 {
+    position: absolute;
+    top: 7%;
+    left: 11%;
+    text-transform: uppercase;
+    font-family: monument ;
+    font-size: .6rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+@media (min-width : 450px) {
+    .text-section{
+        display: none;
+    } 
+
+    .navbar img {
+        position: absolute;
+        top:6.5%;
+        left: 5%;
+        width: 4%;
+    }
+    .main-page-middle{
+        display: none;
+    }
+}
